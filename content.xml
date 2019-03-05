@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?metadataRepository version='1.2.0'?>
-<repository name='file:/S:/Development/git/eclipse-update-site/ - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+<repository name='file:/S:/Development/git/eclipse-update-site/ - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1551810618513'/>
+    <property name='p2.timestamp' value='1551816591190'/>
     <property name='p2.compressed' value='false'/>
   </properties>
-  <units size='18'>
+  <units size='21'>
     <unit id='de.slothsoft.builderpattern' version='1.0.4.201801181640' generation='2'>
       <update id='de.slothsoft.builderpattern' range='[0.0.0,1.0.4.201801181640)' severity='0'/>
       <properties size='2'>
@@ -35,7 +35,7 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.4.201801181640&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;&#xA;
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.4.201801181640&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
           </instruction>
         </instructions>
       </touchpointData>
@@ -57,6 +57,41 @@
       </filter>
       <artifacts size='1'>
         <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.0.201505051534'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.1.201505091040'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
+        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.1.201505091040'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.0.1.201505091040'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.1.201505091040'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
@@ -104,45 +139,10 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.1.201505091040&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;&#xA;
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.1.201505091040&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.1.201505091040'>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
-        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.1.201505091040'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.0.1.201505091040'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.1.201505091040'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.0.3' singleton='false'>
       <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.0.3)' severity='0'/>
@@ -165,6 +165,41 @@
         </required>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.4.201801181640'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
+        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.4.201801181640'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.0.4.201801181640'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.4.201801181640'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
       <licenses size='1'>
         <license uri='http://www.example.com/license' url='http://www.example.com/license'>
           [Enter License Description here.]
@@ -203,45 +238,10 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.3&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;&#xA;
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.3&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.4.201801181640'>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
-        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.4.201801181640'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.0.4.201801181640'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.4.201801181640'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.0.0.201505051534' singleton='false'>
       <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.0.0.201505051534)' severity='0'/>
@@ -264,6 +264,41 @@
         </required>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.3'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
+        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.3'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.0.3'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.3'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
       <licenses size='1'>
         <license uri='http://www.example.com/license' url='http://www.example.com/license'>
           [Enter License Description here.]
@@ -302,37 +337,32 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.0.201505051534&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;&#xA;
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.0.201505051534&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.3'>
-      <properties size='4'>
+    <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.2.0.201903052007' singleton='false'>
+      <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.2.0.201903052007)' severity='0'/>
+      <properties size='5'>
         <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
         <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
         <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
         <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
       </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.3'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.0.3'/>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.group' version='1.2.0.201903052007'/>
       </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.3'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.2.0.201903052007,1.2.0.201903052007]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' range='[1.2.0.201903052007,1.2.0.201903052007]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
       <licenses size='1'>
         <license uri='http://www.example.com/license' url='http://www.example.com/license'>
           [Enter License Description here.]
@@ -363,6 +393,41 @@
         </required>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.1.0.201903051712'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
+        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.1.0.201903051712'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.1.0.201903051712'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.1.0.201903051712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
       <licenses size='1'>
         <license uri='http://www.example.com/license' url='http://www.example.com/license'>
           [Enter License Description here.]
@@ -406,45 +471,10 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.1.0.201903051712&#xA;
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.1.0.201903051712
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.1.0.201903051712'>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
-        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.1.0.201903051712'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.1.0.201903051712'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.1.0.201903051712'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.0.1.201505091040' singleton='false'>
       <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.0.1.201505091040)' severity='0'/>
@@ -535,7 +565,47 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.2.201505141747&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;&#xA;
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.2.201505141747&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='de.slothsoft.builderpattern' version='1.2.0.201903052007' generation='2'>
+      <update id='de.slothsoft.builderpattern' range='[0.0.0,1.2.0.201903052007)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Fragment'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' version='1.2.0.201903052007'/>
+        <provided namespace='osgi.bundle' name='de.slothsoft.builderpattern' version='1.2.0.201903052007'/>
+        <provided namespace='java.package' name='de.slothsoft.builderpattern' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='de.slothsoft.builderpattern' version='1.2.0.201903052007'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='[3.13.100,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.15.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='[3.16.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core.manipulation' range='[1.11.0,2.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='[3.16.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='[3.14.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.text' range='[3.7.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='[3.110.0,4.0.0)'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.2.0.201903052007'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.2.0.201903052007&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -561,6 +631,41 @@
         </required>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.2.0.201903052007'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
+        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.2.0.201903052007'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.2.0.201903052007'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.2.0.201903052007'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
       <licenses size='1'>
         <license uri='http://www.example.com/license' url='http://www.example.com/license'>
           [Enter License Description here.]

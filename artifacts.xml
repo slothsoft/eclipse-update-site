@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
-<repository name='file:/S:/Development/git/eclipse-update-site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+<repository name='file:/S:/Development/git/eclipse-update-site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1551810618508'/>
+    <property name='p2.timestamp' value='1551816591179'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -10,7 +10,7 @@
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='12'>
+  <artifacts size='14'>
     <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.1.201505091040'>
       <properties size='6'>
         <property name='artifact.size' value='595'/>
@@ -18,16 +18,6 @@
         <property name='download.md5' value='7e77b8bf1aa37192363fea482424ce71'/>
         <property name='download.checksum.md5' value='7e77b8bf1aa37192363fea482424ce71'/>
         <property name='download.checksum.sha-256' value='088863d275c6ddfbe0dd2e4ced0e312403e3b47f16744e71c181ad98be3bca0b'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.3'>
-      <properties size='6'>
-        <property name='artifact.size' value='581'/>
-        <property name='download.size' value='581'/>
-        <property name='download.md5' value='a4e178b607161528c665b6a0528601e9'/>
-        <property name='download.checksum.md5' value='a4e178b607161528c665b6a0528601e9'/>
-        <property name='download.checksum.sha-256' value='6dec738031aad79f19243792b0a8b3864bac5d30d84de33f012d764517dd83fc'/>
         <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
@@ -49,13 +39,13 @@
         <property name='download.checksum.sha-256' value='a555eebd55cf8020936ee8ed9e35ef47fa5f77c9758e493b66067dea4d640953'/>
       </properties>
     </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.4.201801181640'>
+    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.2.0.201903052007'>
       <properties size='6'>
-        <property name='artifact.size' value='594'/>
-        <property name='download.size' value='594'/>
-        <property name='download.md5' value='734cb5e792900991dd622533c60107fc'/>
-        <property name='download.checksum.md5' value='734cb5e792900991dd622533c60107fc'/>
-        <property name='download.checksum.sha-256' value='36d74e16be00f2542a069f9bf6546659776431e9b758b7f3989a15fdf21f38a8'/>
+        <property name='artifact.size' value='885'/>
+        <property name='download.size' value='885'/>
+        <property name='download.md5' value='f124ef11dc56d632b48452512ea883cc'/>
+        <property name='download.checksum.md5' value='f124ef11dc56d632b48452512ea883cc'/>
+        <property name='download.checksum.sha-256' value='e54401a634c87432661ee26e4bd143fdd5f71554647c0fb7d8216e4e09ea2086'/>
         <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
@@ -66,6 +56,55 @@
         <property name='download.md5' value='a8c11e56d0187b04049ca26a0aa2b1f9'/>
         <property name='download.checksum.md5' value='a8c11e56d0187b04049ca26a0aa2b1f9'/>
         <property name='download.checksum.sha-256' value='8ff4ba3f911485f622495433f0cf3dc79d692f582d5a80f1fd5337f4aae99e97'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.2.201505141747'>
+      <properties size='6'>
+        <property name='artifact.size' value='595'/>
+        <property name='download.size' value='595'/>
+        <property name='download.md5' value='0bb76e0410a80c5e976fb018a597bfab'/>
+        <property name='download.checksum.md5' value='0bb76e0410a80c5e976fb018a597bfab'/>
+        <property name='download.checksum.sha-256' value='5290a10434f851233d8a990b2e028a19ee7cc2bb11245820a7b662487316a7ef'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.1.0.201903051712'>
+      <properties size='6'>
+        <property name='artifact.size' value='596'/>
+        <property name='download.size' value='596'/>
+        <property name='download.md5' value='4cfbd496011f58943ba14f00cf2e7961'/>
+        <property name='download.checksum.md5' value='4cfbd496011f58943ba14f00cf2e7961'/>
+        <property name='download.checksum.sha-256' value='910bb5a07159360fac8cab0c57bc58165e5e052458b81371046f00913606847b'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.3'>
+      <properties size='6'>
+        <property name='artifact.size' value='581'/>
+        <property name='download.size' value='581'/>
+        <property name='download.md5' value='a4e178b607161528c665b6a0528601e9'/>
+        <property name='download.checksum.md5' value='a4e178b607161528c665b6a0528601e9'/>
+        <property name='download.checksum.sha-256' value='6dec738031aad79f19243792b0a8b3864bac5d30d84de33f012d764517dd83fc'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.4.201801181640'>
+      <properties size='6'>
+        <property name='artifact.size' value='594'/>
+        <property name='download.size' value='594'/>
+        <property name='download.md5' value='734cb5e792900991dd622533c60107fc'/>
+        <property name='download.checksum.md5' value='734cb5e792900991dd622533c60107fc'/>
+        <property name='download.checksum.sha-256' value='36d74e16be00f2542a069f9bf6546659776431e9b758b7f3989a15fdf21f38a8'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.2.0.201903052007'>
+      <properties size='5'>
+        <property name='artifact.size' value='45944'/>
+        <property name='download.size' value='45944'/>
+        <property name='download.md5' value='ba1f9da540164d4c249abd8f57a3c5c5'/>
+        <property name='download.checksum.md5' value='ba1f9da540164d4c249abd8f57a3c5c5'/>
+        <property name='download.checksum.sha-256' value='9ee7d47ec48d6cda04442ab7b74a80c91ccf62db15ba5166fb616d65bbbcea30'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.0.1.201505091040'>
@@ -94,26 +133,6 @@
         <property name='download.md5' value='85b8c19a179cedd5c63d4c8f20aef40a'/>
         <property name='download.checksum.md5' value='85b8c19a179cedd5c63d4c8f20aef40a'/>
         <property name='download.checksum.sha-256' value='2dc520b82a41f4498689899169fba9fca61d34b06793d101d644c359c58e9f3b'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.2.201505141747'>
-      <properties size='6'>
-        <property name='artifact.size' value='595'/>
-        <property name='download.size' value='595'/>
-        <property name='download.md5' value='0bb76e0410a80c5e976fb018a597bfab'/>
-        <property name='download.checksum.md5' value='0bb76e0410a80c5e976fb018a597bfab'/>
-        <property name='download.checksum.sha-256' value='5290a10434f851233d8a990b2e028a19ee7cc2bb11245820a7b662487316a7ef'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.1.0.201903051712'>
-      <properties size='6'>
-        <property name='artifact.size' value='596'/>
-        <property name='download.size' value='596'/>
-        <property name='download.md5' value='4cfbd496011f58943ba14f00cf2e7961'/>
-        <property name='download.checksum.md5' value='4cfbd496011f58943ba14f00cf2e7961'/>
-        <property name='download.checksum.sha-256' value='910bb5a07159360fac8cab0c57bc58165e5e052458b81371046f00913606847b'/>
-        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.0.2.201505141747'>
