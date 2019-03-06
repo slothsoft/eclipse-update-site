@@ -17,7 +17,7 @@ The update site for possible millions of plug-ins. Current number: 1
 ##  Plug-ins
 
 
-| Plug-ins       | Description    | Description    |
+| Plug-ins       | Documentation  | Description    |
 | -------------  | -------------- | -------------- |
 | [Builder Pattern](https://github.com/slothsoft/eclipse-builder-pattern) | [Wiki](https://github.com/slothsoft/eclipse-builder-pattern/wiki) | A small plug-in that helps you create not only getters and setters, but fluent methods, too. |
   
