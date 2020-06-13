@@ -2,10 +2,50 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='file:/S:/Development/git/eclipse-update-site/ - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1551896665491'/>
+    <property name='p2.timestamp' value='1592044299897'/>
     <property name='p2.compressed' value='false'/>
   </properties>
-  <units size='22'>
+  <units size='26'>
+    <unit id='de.slothsoft.builderpattern' version='1.2.1' generation='2'>
+      <update id='de.slothsoft.builderpattern' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Fragment'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='de.slothsoft.builderpattern' version='1.2.1'/>
+        <provided namespace='java.package' name='de.slothsoft.builderpattern' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='de.slothsoft.builderpattern' version='1.2.1'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='[3.13.100,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.15.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='[3.16.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core.manipulation' range='[1.11.0,2.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='[3.16.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='[3.14.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.text' range='[3.7.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='[3.110.0,4.0.0)'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.2.1
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='de.slothsoft.builderpattern' version='1.0.4.201801181640' generation='2'>
       <update id='de.slothsoft.builderpattern' range='[0.0.0,1.0.4.201801181640)' severity='0'/>
       <properties size='2'>
@@ -39,41 +79,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.0.201505051534'>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.0.201505051534'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.0.0.201505051534'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.0.201505051534'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.1.201505091040'>
       <properties size='4'>
@@ -243,21 +248,21 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.0.0.201505051534' singleton='false'>
-      <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.0.0.201505051534)' severity='0'/>
+    <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.2.1' singleton='false'>
+      <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.2.1)' severity='0'/>
       <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
+        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
         <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
         <property name='org.eclipse.equinox.p2.type.group' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.group' version='1.0.0.201505051534'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.group' version='1.2.1'/>
       </provides>
       <requires size='2'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.0.201505051534,1.0.0.201505051534]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' range='[1.0.0.201505051534,1.0.0.201505051534]'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' range='[1.2.1,1.2.1]'>
           <filter>
             (org.eclipse.update.install.features=true)
           </filter>
@@ -265,32 +270,13 @@
       </requires>
       <touchpoint id='null' version='0.0.0'/>
       <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
+        <license uri='https://github.com/slothsoft/eclipse-builder-pattern/blob/master/LICENSE' url='https://github.com/slothsoft/eclipse-builder-pattern/blob/master/LICENSE'>
+          MIT License&#xA;&#xA;Copyright (c) 2019 Slothsoft&#xA;&#xA;Permission is hereby granted, free of charge, to any person obtaining a copy&#xA;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xA;in the Software without restriction, including without limitation the rights&#xA;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xA;copies of the Software, and to permit persons to whom the Software is&#xA;furnished to do so, subject to the following conditions:&#xA;&#xA;The above copyright notice and this permission notice shall be included in all&#xA;copies or substantial portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xA;SOFTWARE.
         </license>
       </licenses>
       <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
         [Enter Copyright Description here.]
       </copyright>
-    </unit>
-    <unit id='file:/S:/Development/git/eclipse-update-site/category.xml.slothsoft' version='1.0.0.7D57IcEp4--7kMZdN2RTb8sz0'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='Slothsoft'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='file:/S:/Development/git/eclipse-update-site/category.xml.slothsoft' version='1.0.0.7D57IcEp4--7kMZdN2RTb8sz0'/>
-      </provides>
-      <requires size='7'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.4.201801181640,1.0.4.201801181640]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.1.201505091040,1.0.1.201505091040]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.3,1.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.1.0.201903051712,1.1.0.201903051712]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.0.201505051534,1.0.0.201505051534]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.2.201505141747,1.0.2.201505141747]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.2.0.201903052007,1.2.0.201903052007]'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
     </unit>
     <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.3'>
       <properties size='4'>
@@ -327,39 +313,40 @@
         [Enter Copyright Description here.]
       </copyright>
     </unit>
-    <unit id='de.slothsoft.builderpattern' version='1.0.0.201505051534' generation='2'>
-      <update id='de.slothsoft.builderpattern' range='[0.0.0,1.0.0.201505051534)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Fragment'/>
+    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.2.1'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
+        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
         <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
       </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' version='1.0.0.201505051534'/>
-        <provided namespace='osgi.bundle' name='de.slothsoft.builderpattern' version='1.0.0.201505051534'/>
-        <provided namespace='java.package' name='de.slothsoft.builderpattern' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='de.slothsoft.builderpattern' version='1.0.0.201505051534'>
-          <properties size='1'>
-            <property name='type' value='osgi.fragment'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='osgi.fragment' name='org.eclipse.jdt.ui' version='1.0.0.201505051534'/>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.2.1'/>
       </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='3.10.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.0.0.201505051534'/>
+        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.2.1'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.0.201505051534&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
+      <licenses size='1'>
+        <license uri='https://github.com/slothsoft/eclipse-builder-pattern/blob/master/LICENSE' url='https://github.com/slothsoft/eclipse-builder-pattern/blob/master/LICENSE'>
+          MIT License&#xA;&#xA;Copyright (c) 2019 Slothsoft&#xA;&#xA;Permission is hereby granted, free of charge, to any person obtaining a copy&#xA;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xA;in the Software without restriction, including without limitation the rights&#xA;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xA;copies of the Software, and to permit persons to whom the Software is&#xA;furnished to do so, subject to the following conditions:&#xA;&#xA;The above copyright notice and this permission notice shall be included in all&#xA;copies or substantial portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xA;SOFTWARE.
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
     </unit>
     <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.2.0.201903052007' singleton='false'>
       <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.2.0.201903052007)' severity='0'/>
@@ -376,36 +363,6 @@
       <requires size='2'>
         <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.2.0.201903052007,1.2.0.201903052007]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' range='[1.2.0.201903052007,1.2.0.201903052007]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
-    </unit>
-    <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.0.2.201505141747' singleton='false'>
-      <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.0.2.201505141747)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
-        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.group' version='1.0.2.201505141747'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.2.201505141747,1.0.2.201505141747]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' range='[1.0.2.201505141747,1.0.2.201505141747]'>
           <filter>
             (org.eclipse.update.install.features=true)
           </filter>
@@ -555,40 +512,6 @@
         [Enter Copyright Description here.]
       </copyright>
     </unit>
-    <unit id='de.slothsoft.builderpattern' version='1.0.2.201505141747' generation='2'>
-      <update id='de.slothsoft.builderpattern' range='[0.0.0,1.0.2.201505141747)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Fragment'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
-      </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' version='1.0.2.201505141747'/>
-        <provided namespace='osgi.bundle' name='de.slothsoft.builderpattern' version='1.0.2.201505141747'/>
-        <provided namespace='java.package' name='de.slothsoft.builderpattern' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='de.slothsoft.builderpattern' version='1.0.2.201505141747'>
-          <properties size='1'>
-            <property name='type' value='osgi.fragment'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='osgi.fragment' name='org.eclipse.jdt.ui' version='1.0.2.201505141747'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='3.10.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.0.2.201505141747'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.2.201505141747&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='de.slothsoft.builderpattern' version='1.2.0.201903052007' generation='2'>
       <update id='de.slothsoft.builderpattern' range='[0.0.0,1.2.0.201903052007)' severity='0'/>
       <properties size='2'>
@@ -693,6 +616,208 @@
       <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
         [Enter Copyright Description here.]
       </copyright>
+    </unit>
+    <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.0.201505051534'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.0.201505051534'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='de.slothsoft.builderpattern.feature' version='1.0.0.201505051534'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.0.201505051534'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.0.0.201505051534' singleton='false'>
+      <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.0.0.201505051534)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.group' version='1.0.0.201505051534'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.0.201505051534,1.0.0.201505051534]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' range='[1.0.0.201505051534,1.0.0.201505051534]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='file:/S:/Development/git/eclipse-update-site/category.xml.slothsoft' version='1.0.0.7D57IcEp4--7kMZdN2RTb8sz0'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Slothsoft'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='file:/S:/Development/git/eclipse-update-site/category.xml.slothsoft' version='1.0.0.7D57IcEp4--7kMZdN2RTb8sz0'/>
+      </provides>
+      <requires size='7'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.4.201801181640,1.0.4.201801181640]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.1.201505091040,1.0.1.201505091040]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.3,1.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.1.0.201903051712,1.1.0.201903051712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.0.201505051534,1.0.0.201505051534]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.2.201505141747,1.0.2.201505141747]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.2.0.201903052007,1.2.0.201903052007]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='de.slothsoft.builderpattern' version='1.0.0.201505051534' generation='2'>
+      <update id='de.slothsoft.builderpattern' range='[0.0.0,1.0.0.201505051534)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Fragment'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' version='1.0.0.201505051534'/>
+        <provided namespace='osgi.bundle' name='de.slothsoft.builderpattern' version='1.0.0.201505051534'/>
+        <provided namespace='java.package' name='de.slothsoft.builderpattern' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='de.slothsoft.builderpattern' version='1.0.0.201505051534'>
+          <properties size='1'>
+            <property name='type' value='osgi.fragment'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='osgi.fragment' name='org.eclipse.jdt.ui' version='1.0.0.201505051534'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='3.10.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.0.0.201505051534'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.0.201505051534&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='de.slothsoft.builderpattern.feature.feature.group' version='1.0.2.201505141747' singleton='false'>
+      <update id='de.slothsoft.builderpattern.feature.feature.group' range='[0.0.0,1.0.2.201505141747)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Plug-in'/>
+        <property name='org.eclipse.equinox.p2.description' value='A small plug-in that helps you create not only getters and setters, but builder methods, too. Works very similar (and is actually based on) the Getter / Setter dialog in the Eclipse JDT.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/slothsoft/eclipse-plugins/wiki/Builder-Pattern-Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.group' version='1.0.2.201505141747'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.2.201505141747,1.0.2.201505141747]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern.feature.feature.jar' range='[1.0.2.201505141747,1.0.2.201505141747]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='file:/S:/Development/git/eclipse-update-site/category.xml.slothsoft' version='1.0.0.7F797KcEp4--7kMZdN2RTb8sz0'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Slothsoft'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='file:/S:/Development/git/eclipse-update-site/category.xml.slothsoft' version='1.0.0.7F797KcEp4--7kMZdN2RTb8sz0'/>
+      </provides>
+      <requires size='8'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.4.201801181640,1.0.4.201801181640]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.1.201505091040,1.0.1.201505091040]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.3,1.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.1.0.201903051712,1.1.0.201903051712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.0.201505051534,1.0.0.201505051534]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.0.2.201505141747,1.0.2.201505141747]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' range='[1.2.0.201903052007,1.2.0.201903052007]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='de.slothsoft.builderpattern' version='1.0.2.201505141747' generation='2'>
+      <update id='de.slothsoft.builderpattern' range='[0.0.0,1.0.2.201505141747)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Builder Pattern Fragment'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Slothsoft'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.slothsoft.builderpattern' version='1.0.2.201505141747'/>
+        <provided namespace='osgi.bundle' name='de.slothsoft.builderpattern' version='1.0.2.201505141747'/>
+        <provided namespace='java.package' name='de.slothsoft.builderpattern' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='de.slothsoft.builderpattern' version='1.0.2.201505141747'>
+          <properties size='1'>
+            <property name='type' value='osgi.fragment'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='osgi.fragment' name='org.eclipse.jdt.ui' version='1.0.2.201505141747'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='3.10.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.0.2.201505141747'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: de.slothsoft.builderpattern;singleton:=true&#xA;Bundle-Version: 1.0.2.201505141747&#xA;Fragment-Host: org.eclipse.jdt.ui;bundle-version=&quot;3.10.0&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
     </unit>
     <unit id='de.slothsoft.builderpattern.feature.feature.jar' version='1.0.2.201505141747'>
       <properties size='4'>

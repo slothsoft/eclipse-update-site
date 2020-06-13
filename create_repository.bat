@@ -4,7 +4,7 @@ SET CURRENT_PATH=%~dp0
 SET SOURCE_REPOSITORY=%CURRENT_PATH%dropin
 SET TARGET_REPOSITORY=%CURRENT_PATH%
  
-java -jar "%ECLIPSE_HOME%/plugins/org.eclipse.equinox.launcher_%EQUINOX_VERSION%.jar" -application org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher -metadataRepository "file:/%TARGET_REPOSITORY%" -artifactRepository "file:/%TARGET_REPOSITORY%" -source "%SOURCE_REPOSITORY%" -publishArtifacts -append 
+java -jar "%ECLIPSE_HOME%/plugins/org.eclipse.equinox.launcher_%EQUINOX_VERSION%.jar" -application org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher -metadataRepository file:/%TARGET_REPOSITORY% -artifactRepository file:/%TARGET_REPOSITORY% -source %SOURCE_REPOSITORY% -append -publishArtifacts 
  
 "%ECLIPSE_HOME%/eclipse" -debug -consolelog -nosplash -verbose -application org.eclipse.equinox.p2.publisher.CategoryPublisher  -categoryQualifier -metadataRepository "file:/%TARGET_REPOSITORY%." -categoryDefinition "file:/%CURRENT_PATH%category.xml"
  
