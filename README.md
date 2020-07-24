@@ -1,10 +1,12 @@
 #  Eclipse Update Site
 
-The update site for possibly millions of plug-ins. Current number: 1
+The update site for possibly millions of plug-ins. Current number: 2
 
 ## Getting Started
 
 **Update Site:** http://github.com/slothsoft/eclipse-update-site/raw/master/
+   
+_(Note that this URL will not work inside the browser, but **will** work in Eclipse.)_
    
 1. Open your Eclipse IDE
 2. Open the "Install" dialog (*Help* -> *Install New Software*)
@@ -20,6 +22,7 @@ The update site for possibly millions of plug-ins. Current number: 1
 | Plug-in        | Documentation  | Description    |
 | -------------  | -------------- | -------------- |
 | [Builder Pattern](https://github.com/slothsoft/eclipse-builder-pattern) | [Wiki](https://github.com/slothsoft/eclipse-builder-pattern/wiki) | A small plug-in that helps you create not only getters and setters, but fluent methods, too. |
+| [Maven View](https://github.com/slothsoft/eclipse-maven-view) | [Wiki](https://github.com/slothsoft/eclipse-maven-view/wiki) | A plug-in that recreates IntelliJ IDEA's Maven View for Eclipse. |
 
 
 
