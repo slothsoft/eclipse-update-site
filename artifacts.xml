@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/S:/Development/git/eclipse-update-site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1592044295014'/>
+    <property name='p2.timestamp' value='1595621350844'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -10,7 +10,16 @@
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='16'>
+  <artifacts size='18'>
+    <artifact classifier='osgi.bundle' id='de.slothsoft.mavenview' version='1.0.0'>
+      <properties size='5'>
+        <property name='artifact.size' value='26434'/>
+        <property name='download.size' value='26434'/>
+        <property name='download.md5' value='c50786151b38041d4b58ea617ed8d2c0'/>
+        <property name='download.checksum.md5' value='c50786151b38041d4b58ea617ed8d2c0'/>
+        <property name='download.checksum.sha-256' value='e28afe5ecb12ab717b327afcea1263c19557e5819f2a632417b3dbf807129a7e'/>
+      </properties>
+    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.1.201505091040'>
       <properties size='6'>
         <property name='artifact.size' value='595'/>
@@ -56,6 +65,16 @@
         <property name='download.md5' value='a8c11e56d0187b04049ca26a0aa2b1f9'/>
         <property name='download.checksum.md5' value='a8c11e56d0187b04049ca26a0aa2b1f9'/>
         <property name='download.checksum.sha-256' value='8ff4ba3f911485f622495433f0cf3dc79d692f582d5a80f1fd5337f4aae99e97'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.mavenview.feature' version='1.0.0'>
+      <properties size='6'>
+        <property name='artifact.size' value='1410'/>
+        <property name='download.size' value='1410'/>
+        <property name='download.md5' value='bd44c534e383c03d2ebcda919c1e257b'/>
+        <property name='download.checksum.md5' value='bd44c534e383c03d2ebcda919c1e257b'/>
+        <property name='download.checksum.sha-256' value='92892bce17e4fa80eae75d618496511cd4f5c5ee9960b431552da827be9d883c'/>
+        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='de.slothsoft.builderpattern' version='1.2.1'>
