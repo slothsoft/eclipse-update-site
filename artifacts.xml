@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/S:/Development/git/eclipse-update-site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1595621350844'/>
+    <property name='p2.timestamp' value='1595759042885'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -10,7 +10,7 @@
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='18'>
+  <artifacts size='20'>
     <artifact classifier='osgi.bundle' id='de.slothsoft.mavenview' version='1.0.0'>
       <properties size='5'>
         <property name='artifact.size' value='26434'/>
@@ -18,6 +18,15 @@
         <property name='download.md5' value='c50786151b38041d4b58ea617ed8d2c0'/>
         <property name='download.checksum.md5' value='c50786151b38041d4b58ea617ed8d2c0'/>
         <property name='download.checksum.sha-256' value='e28afe5ecb12ab717b327afcea1263c19557e5819f2a632417b3dbf807129a7e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='de.slothsoft.mavenview' version='1.0.1'>
+      <properties size='5'>
+        <property name='artifact.size' value='41236'/>
+        <property name='download.size' value='41236'/>
+        <property name='download.md5' value='b756ffecff0b7c4584d0d8b78e805085'/>
+        <property name='download.checksum.md5' value='b756ffecff0b7c4584d0d8b78e805085'/>
+        <property name='download.checksum.sha-256' value='b2b2235246650eeda913d24b9232bd3afd86067a337c8373256e61d20da114d2'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.builderpattern.feature' version='1.0.1.201505091040'>
@@ -74,6 +83,16 @@
         <property name='download.md5' value='bd44c534e383c03d2ebcda919c1e257b'/>
         <property name='download.checksum.md5' value='bd44c534e383c03d2ebcda919c1e257b'/>
         <property name='download.checksum.sha-256' value='92892bce17e4fa80eae75d618496511cd4f5c5ee9960b431552da827be9d883c'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='de.slothsoft.mavenview.feature' version='1.0.1'>
+      <properties size='6'>
+        <property name='artifact.size' value='1388'/>
+        <property name='download.size' value='1388'/>
+        <property name='download.md5' value='afde54a4dd9da896fd77d8669bd600c0'/>
+        <property name='download.checksum.md5' value='afde54a4dd9da896fd77d8669bd600c0'/>
+        <property name='download.checksum.sha-256' value='1a19bf00d15ceb9fe7f3cd75a36253fe664db7d0c963c3a8867ebb8ead6fcd56'/>
         <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
